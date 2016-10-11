@@ -7,36 +7,53 @@
    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
    <style>
-       /* Remove the navbar's default margin-bottom and rounded borders */
-       .navbar {
-           margin-bottom: 0;
-           border-radius: 0;
-       }
 
-       /* Add a gray background color and some padding to the footer */
-       footer {
-           background-color: #f2f2f2;
-           padding: 25px;
-       }
+    body{
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+    }
 
-       .carousel-inner img {
-           width: 100%; /* Set width to 100% */
-           margin: auto;
-           min-height:250px;
-       }
+    /* Add a gray background color and some padding to the footer */
+    .footer-wrapper {
+        background-color: #2c2c2c;
+        padding: 25px;
+    }
 
-       /* Hide the carousel text when the screen is less than 600 pixels wide */
-       @media (max-width: 600px) {
-           .carousel-caption {
-               display: none;
-           }
-       }
-       #ExperienceContainer {
-           background-color: teal;
-       }
-   </style>
+    .social{
+        list-style-type: none;
+    }
+
+    #Facebook,#Twitter,#Instagram {
+        display: inline;
+        padding: 2px;
+    }
+    .carousel-inner img {
+        width: 100%; /* Set width to 100% */
+        margin: auto;
+        min-height:250px;
+    }
+
+    /* Hide the carousel text when the screen is less than 600 pixels wide */
+    @media (max-width: 600px) {
+        .carousel-caption {
+            display: none;
+        }
+    }
+    #ExperienceContainer {
+        background-color: teal;
+    }
+</style>
 </head>
+
+
+
 <body>
 
 <!--top Navigation Menu-->
@@ -50,7 +67,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <!--Need to add Home page link--><a href="#" class="navbar-brand"><Bold>Winter Leadership Conference</Bold></a>
+            <a href="home.html" class="navbar-brand"><Bold>Winter Leadership Conference</Bold></a>
         </div>
         <div class="collapse navbar-collapse" id="mainNavBar">
             <ul class="nav navbar-nav navbar-right">
@@ -61,7 +78,6 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <span class="caret"></span></a>
                     <!--Creating Dropdown Menu Items-->
                     <ul class="dropdown-menu">
-                        <li> <a href="about.html">About Winter Leadership Conference</a></li>
                         <li> <a href="http://www.uccr.org/camp/pilgrim-pines-camp-conference-center">The Camp Site</a></li>
                         <li> <a href="http://uclacki.org/">What is UCLA Circle K?</a></li>
                     </ul>
@@ -81,7 +97,6 @@
         </div>
     </div>
 </nav>
-
 
 <!-- Carousel-->
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -177,32 +192,36 @@
 
 <!-- Footer Design-->
 <footer class="footer-wrapper" role="contentinfo">
-    <div class="absolute-footer-dark" style=" background-color:#2c2c2c">
-        <div class="row">
-            <div class="large-12 columns">
-                <div class="right">
-                    <ul class="social">
-                        <li>
-                            <a href="https://www.facebook.com/groups/UCLACKI/" target="_blank">
-                                <img src="http://electricrun.com/wp-content/themes/electric-run/images/social/social-facebook.png">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/uclacki?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
-                                <img src="http://electricrun.com/wp-content/themes/electric-run/images/social/social-instagram.png">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/uclacki/" target="_blank">
-                                <img src="http://electricrun.com/wp-content/themes/electric-run/images/social/social-twitter.png">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <div class="row">
+        <div class="col-sm-3 col-sm-offset-5">
+            <a href="http://uclacki.org/" target="_blank">
+                <img src="Images/CKI.PNG">
+            </a>
+        </div>
+        <div class="col-sm-4">
+            <ul class="social">
+                <li id="Facebook">
+                    <a href="https://www.facebook.com/events/1797981023812207/" target="_blank">
+                        <img src="http://electricrun.com/wp-content/themes/electric-run/images/social/social-facebook.png">
+                    </a>
+                </li>
+                <li id="Twitter">
+                    <a href="https://twitter.com/uclacki?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+                        <img src="http://electricrun.com/wp-content/themes/electric-run/images/social/social-instagram.png">
+                    </a>
+                </li>
+                <li id="Instagram">
+                    <a href="https://www.instagram.com/uclacki/" target="_blank">
+                        <img src="http://electricrun.com/wp-content/themes/electric-run/images/social/social-twitter.png">
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
 </footer>
+
+
+
 
 </body>
 </html>
