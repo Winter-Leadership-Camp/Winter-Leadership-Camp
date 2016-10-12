@@ -13,6 +13,7 @@
         .navbar {
             margin-bottom: 0;
             border-radius: 0;
+            position: relative; /* Make sure navbar doesn't cut off information at the top of page */
         }
 
         /* Add a gray background color and some padding to the footer */
@@ -20,7 +21,46 @@
             background-color: #2c2c2c;
             padding: 25px;
         }
+        /* Registration section */
+        .registration{
+            text-align: center;
+            color: white;
+            background: url(http://i.imgur.com/858QuEu.png)
+                        repeat center center scroll;
+        }
 
+        .registration h1{
+            font-family: "Myriad Pro";
+            color: #ffbf10;
+            font-weight: bold;
+            border-bottom: 5px #ffbf10 dotted;
+            display: inline;
+            text-transform: uppercase;
+        }
+
+        .registration h3{
+            font-family: "Myriad Pro";
+            color: #ffbf10;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .registrationinfo ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .registrationinfo li {
+            padding: 8px;
+            margin-bottom: 7px;
+            margin-top: 7px;
+            background: rgba(44,44,44,0.9);
+            color: #ffffff;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+
+        /* Social section */
         .social{
             list-style-type: none;
         }
@@ -78,25 +118,30 @@
 </nav>
 
 <!-- Main Content-->
+<section class="registration" id="registration-info">
 <div class="container-fluid text-center" id="About-Content">
-    <h1>Registration Information</h1><br>
+   <br><h1><span>Registration Information</span></h1>
     <div class="row">
-        <div class="col-sm-6">
-            <h3> HOW MUCH DOES WLC COST?</h3>
-            <p> For the entire weekend, including 5 meals, lodging, and other event gear
-                (note: transportation is not accounted for), the cost is $138 per person,
-                and there will be no price increases. YAY. Please note that your payment
-                must be RECEIVED by October 31st.
-            </p>
-            <p> We understand that this is an expensive season, so with that, we are offering
-                an installment plan for those who choose that route. With the installment plan,
-                the first installment of $85 must be RECEIVED by October 31st to reserve your spot,
-                and the second installment of $53 must be received by December 1st. </p>
+      <br><br>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-5 registrationinfo">
+            <ul><li>
+                <h3> HOW MUCH DOES WLC COST?</h3>
+                    <p>For the entire weekend, including 5 meals, lodging, and other event gear
+                    (note: transportation not included), the cost is $138 per person,
+                    and there will be no price increases.
+                    <b>Please note that your payment must be RECEIVED by October 31st.</b></p>
+                    <p>We are also offering an installment plan with the first installment of $85
+                        due by <b>October 31st</b> and the second installment of $53
+                       due by <b>December 1st</b>.</p>
+            </li></ul>
         </div>
-        <div class="col-sm-6">
-            <h3>IMPORTANT FORMS: </h3>
-            <p> Below are the links to the Medical Waiver and Code of Conduct.
-                We ask that you review what is stated on these forms before attending,
+
+        <div class="col-sm-5 registrationinfo">
+            <ul><li>
+                <h3>IMPORTANT FORMS: </h3>
+                <p> Below are the links to the Medical Waiver and Code of Conduct.
+                <br>We ask that you review what is stated on these forms before attending,
                 and that you print, sign, and bring these with you when you come to camp!</p>
             <p>
                 <a href="https://drive.google.com/file/d/0B-CASFDMVvnNQjNwRlNrZ0ppc2M/view?usp=sharing">Medical Waiver</a>
@@ -104,49 +149,53 @@
             <p>
                 <a href="https://drive.google.com/file/d/0B-CASFDMVvnNalpCbVdqTnRtaE0/view?usp=sharing">Code of Conduct</a>
             </p>
+            </li></ul>
         </div>
 
     </div>
 
+    <br>
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-5 registrationinfo">
+            <ul><li>
             <h3> HOW DO I PAY? </h3>
-            <p> To pay for Winter Leadership Camp, we ask that you pay through your club.
-                Note to Clubs: check or Venmo is allowed. If you prefer another method of payment,
-                please contact us through email.</p>
-            <p>
-                <b>>>> If writing a check</b>, please write it out to 'UCLA Circle K International.'
-                Please also EMAIL and MAIL a copy of a roster of how much each member paid with the check.
-                The roster format is listed below. The address to send checks is as follows: Factor Building Box
-                951781 Attn: Rich Thigpen, Los Angeles, CA 90095-1871.</p>
-            <p>
-                <b>>>> If Venmo</b>, our venmo name is @uclacki. For the description of payment,
-                please put "[School Name] for WLC." Please also email a copy of a roster of how much each
-                member paid using the following
+            <p> To pay for WLC, we ask that you pay through your club and  <b>EMAIL</b> a copy of the roster of how much each member paid using the following
                 <a href="https://docs.google.com/spreadsheets/d/1D2pVPnZ3RhGF0w49MB7MRe1G2tqMYbQqqu2M6UNVu74/edit?usp=sharing">format</a>.</p>
-
+                    </p>
             <p>
-                Please keep in mind that the payments must be RECEIVED by the deadline or earlier to
-                officially reserve your spots. </p>
-
+                <b>>>> If writing a check</b>, please write it out to 'UCLA Circle K International.' to:
+                <br><b>Factor Building Box 951781
+                <br>Attn: Rich Thigpen, Los Angeles, CA 90095-1871.</p></b>
+            <p>
+                <b>>>> If Venmo</b>, our venmo name is <b>@uclacki</b> and please put
+                "[School Name] for WLC." for the description.
+            <p>
+                Please keep in mind that the payments must be <b>RECEIVED by the October 31st</b> or earlier to
+                officially reserve your spots. If you prefer another method of payment,
+                please contact us through <a href="mailto:uclackiwlc@gmail.com?Subject=WLC%20Payment">email</a>.</p>
+            </li></ul>
         </div>
-        <div class="col-md-6">
+
+        <div class="col-sm-5 registrationinfo">
+            <ul><li>
             <h3>DIVISIONS CURRENTLY APPROVED:</h3>
-            <p>- Central Coast
+                <p>- Central Coast
                 <br>- Desert Oasis*
                 <br>- Foothill
                 <br>- Golden Gate
                 <br>- Magic Kingdom
                 <br>- Metro
                 <br>- Sunset
-
             <p>This will be updated as paperwork continually gets approved.
                 <br>So keep checking back!
-
             <p>*With exception of CSN until chartered.</p>
+            </li></ul>
         </div>
+
     </div>
 </div><br>
+</section>
 
 <!-- Footer Design-->
 <footer class="footer-wrapper" role="contentinfo">
